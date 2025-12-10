@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Poli.Productos.Api/Poli.Productos.Api.csproj" />
+  <Project Path="Poli.Productos.Aplication/Poli.Productos.Aplication.csproj" />
+  <Project Path="Poli.Productos.Domain/Poli.Productos.Domain.csproj" />
+  <Project Path="Poli.Productos.Infrastructure/Poli.Productos.Infrastructure.csproj" />
+  <Project Path="Poli.Productos.Test/Poli.Productos.Test.csproj" />
+</Solution>
