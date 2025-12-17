@@ -1,0 +1,47 @@
+### Variables
+@host = http://localhost:5125
+@apiPath = /api/Producto
+
+### 1. Obtener todos los productos
+GET {{host}}{{apiPath}}
+Content-Type: application/json
+
+### 2. Obtener producto por ID
+GET {{host}}{{apiPath}}/1
+Content-Type: application/json
+
+### 3. Crear un nuevo producto
+POST {{host}}{{apiPath}}
+Content-Type: application/json
+
+{
+  "nombre": "Monitor 4K",
+  "descripcion": "Monitor de 27 pulgadas 4K",
+  "precio": 450.00
+}
+
+### 4. Actualizar un producto
+PUT {{host}}{{apiPath}}/1
+Content-Type: application/json
+
+{
+  "nombre": "Laptop Gaming",
+  "descripcion": "Laptop gaming de última generación",
+  "precio": 1500.00
+}
+
+### 5. Buscar productos por nombre
+GET {{host}}{{apiPath}}/search?nombre=Laptop
+Content-Type: application/json
+
+### 6. Obtener productos por rango de precio
+GET {{host}}{{apiPath}}/precio-range?minPrecio=20&maxPrecio=100
+Content-Type: application/json
+
+### 7. Eliminar un producto
+DELETE {{host}}{{apiPath}}/2
+Content-Type: application/json
+
+### 8. Probar producto no encontrado
+GET {{host}}{{apiPath}}/999
+Content-Type: application/json

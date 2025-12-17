@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Poli.Productos.Domain.Entities
+﻿namespace Poli.Productos.Domain.Entities
 {
     public class Producto
     {
